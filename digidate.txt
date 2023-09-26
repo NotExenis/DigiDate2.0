@@ -1,0 +1,23 @@
+gebruikers: admin - user
+
+admin kan:
+user blokeren - verwijderen
+hobby tabel en geslagt tabel bijhouden
+nieuwe users goedkueren/afkeuren - mail als niet goed is
+
+user kan profiel aan maken:
+voornaam achternaam username 2fa wachtwoord m/v gweicht lengte hobbys woonplaats foto leeftijd(18+)
+
+user kan zien:
+geliked profiels en wie hem geliked heeft
+
+users bekijken en filtere op bvb geslagt, hobbys, afstand
+
+chaten als alebij elkaar like
+
+meldingen van berighten
+
+gast:
+homapage
+profiel aanmaken
+
