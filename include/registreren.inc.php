@@ -1,5 +1,5 @@
 <div class="registration">
-    <h1>User Registration</h1>
+    <h1>registratie user</h1>
     <form action="php/registreren.php" method="post" enctype="multipart/form-data">
         <label for="firstname">Voornaam *</label>
         <input type="text" id="firstname" name="firstname" required><br><br>

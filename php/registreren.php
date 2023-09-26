@@ -77,8 +77,6 @@
             exit;
         }
     } catch (Exception $e) {
-        $conn->rollback();
-    
         $_SESSION['error'] = 'An error occurred. Please try again or contact an admin if this issue persists.';
         header('Location: ../index.php?page=registreren');
         exit;
