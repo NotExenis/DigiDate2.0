@@ -48,8 +48,8 @@
             exit;
         }
     
-        $sql = "INSERT INTO `tbl_users` (`user_name`, `user_lastname`, `user_email`, `user_password`, `user_gender`, `user_weight`, `user_height`, `user_tags`, `user_address`, `user_dateofbirth`, `user_role`, `user_profile`)
-        VALUES (:firstname, :lastname, :email, :password, :gender, :weight, :height, :tags, :location, :age, :role, :profile)";
+        $sql = "INSERT INTO `tbl_users` (`user_name`, `user_lastname`, `user_email`, `user_password`, `user_gender`, `user_weight`, `user_height`, `user_tags`, `user_address`, `user_dateofbirth`, `user_role`, `user_profile`, `user_whitelisted`)
+        VALUES (:firstname, :lastname, :email, :password, :gender, :weight, :height, :tags, :location, :age, :role, :profile, '0')";
         $sth = $conn->prepare($sql);
         $sth->bindValue(':firstname', $_POST['firstname']);
         $sth->bindValue(':lastname', $_POST['lastname']);

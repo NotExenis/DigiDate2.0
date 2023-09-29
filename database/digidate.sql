@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Sep 29, 2023 at 03:07 PM
+-- Generation Time: Sep 29, 2023 at 04:20 PM
 -- Server version: 8.0.34-0ubuntu0.22.04.1
 -- PHP Version: 8.1.2-1ubuntu2.14
 
@@ -65,7 +65,7 @@ CREATE TABLE `tbl_users` (
   `user_dateofbirth` date NOT NULL,
   `user_role` tinyint(1) NOT NULL DEFAULT '0' COMMENT '0=user\r\n1=admin',
   `user_profile` mediumblob,
-  `user_whitelisted` tinyint NOT NULL DEFAULT '0'
+  `user_whitelisted` tinyint NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --

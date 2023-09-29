@@ -28,11 +28,6 @@
   <?php
     require_once 'include/navbar.inc.php';
 
-<<<<<<< HEAD
-    $home = 'index.php?page=registration';
-
-=======
->>>>>>> 7ce83d16e21d6f9be709683afbc5423e2467f421
     try {
       if (isset($page)) {
         $file = 'include/'.$page.'.inc.php';

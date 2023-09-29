@@ -22,10 +22,9 @@
     }
 ?>
 
-<h1>My Profile</h1>
-
 <!-- Profile View Section -->
 <div id="profile-view">
+    <h2>My Profile</h2>
     <!-- Display user profile picture -->
     <img src="path_to_profile_picture.jpg" alt="Profile Picture">
 
@@ -40,22 +39,4 @@
     <p>Date of Birth: <?php echo $userData['user_dateofbirth']; ?></p>
 
     <!-- Add more user information from the database here -->
-</div>
-
-
-<!-- Profile Edit Section -->
-<div id="profile-edit">
-    <h2>Edit Profile</h2>
-    <form method="POST" action="profile.php">
-        <!-- Add form fields for editing user information here -->
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" value="<?php echo $userData['user_name']; ?>"><br>
-
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" value="<?php echo $userData['user_email']; ?>"><br>
-
-        <!-- Add more form fields for editing user information here -->
-
-        <input type="submit" value="Save Changes">
-    </form>
 </div>
