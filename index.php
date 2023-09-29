@@ -27,8 +27,6 @@
   <?php
     require_once 'include/navbar.inc.php';
 
-    $home = 'index.php?page=home';
-
     try {
       if (isset($page)) {
         $file = 'include/'.$page.'.inc.php';
@@ -42,7 +40,7 @@
         require_once 'include/home.inc.php';
       }
     } catch (\Exception $e) {
-      echo '<meta http-equiv="refresh" content="0; url='.$home.'" />';
+      echo '<meta http-equiv="refresh" content="0; url=index.php?page=home" />';
     }
 
     // Debugging: display the contents of the session
