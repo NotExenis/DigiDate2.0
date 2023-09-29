@@ -20,13 +20,19 @@
   <title><?php if (isset($page)) { echo $page; } else {echo "Home";}?></title>
   <link href="style/style.css" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&display=swap">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   <!-- <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.0-beta.3/dist/iconify-icon.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script> -->
 </head>
-<body>
+<body class="bg-secondary">
   <?php
     require_once 'include/navbar.inc.php';
 
+<<<<<<< HEAD
+    $home = 'index.php?page=registration';
+
+=======
+>>>>>>> 7ce83d16e21d6f9be709683afbc5423e2467f421
     try {
       if (isset($page)) {
         $file = 'include/'.$page.'.inc.php';
