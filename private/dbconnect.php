@@ -1,5 +1,5 @@
 <?php
-  $servername = "localhost";
+  $servername = "192.168.6.56";
   $username = "digidate";
   $password = "qwerty";
 

@@ -17,13 +17,12 @@
         <select id="gender" name="gender" required>
             <option value="man">Man</option>
             <option value="vrouw">Vrouw</option>
-            <option value="other">other</option>
         </select><br><br>
 
         <label for="weight">Gewicht</label>
         <input type="number" id="weight" name="weight"><br><br>
 
-        <label for="height">Lengte</label>
+        <label for="height">Lengte</label>  
         <input type="number" id="height" name="height"><br><br>
 
         <label for="tags">Tags</label>
@@ -33,7 +32,7 @@
         <input type="text" id="location" name="location" required><br><br>
 
         <label for="photo">Foto</label>
-        <input type="file" id="photo" name="photo"><br><br>
+        <input type="file" id="photo" name="photo" required><br><br>
 
         <label for="age">Geboortedatum *</label>
         <input type="date" id="age" name="age" max="<?php echo date('Y-m-d', strtotime('-18 years')); ?>" required><br><br>
