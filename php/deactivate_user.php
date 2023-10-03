@@ -3,7 +3,7 @@ require '../private/dbconnect.php' ;
 
 $id = $_POST['id'];
 $sql = "UPDATE tbl_users 
-        SET user_whitelisted = 1
+        SET user_activated = 1
         WHERE user_id = :id";
 $stmt = $conn->prepare($sql);
 $stmt->execute(array(
